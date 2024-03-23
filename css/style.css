@@ -222,13 +222,16 @@ ul.social-icons li {
 /*===================================================
  1.4 Bottom navigation bar 
 ==================================================*/
-
 .navbar.fixed-bottom {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    padding-top: .5rem;
+    padding-top: 1rem; 
+    padding-left: 0; 
+    padding-right: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     background-color: #23272B;
     color: #FFFFFF;
     box-shadow: 0px 2px 4px rgba(129, 81, 81, 0.1);
@@ -237,6 +240,7 @@ ul.social-icons li {
     border-top-right-radius: 20px;
     padding-bottom: 0 !important;
 }
+
   
 .navbar.fixed-bottom .nav {
     justify-content: space-around;
@@ -245,7 +249,7 @@ ul.social-icons li {
   
 .navbar.fixed-bottom .nav-link {
     color: #333333;
-    font-weight: 600;
+    font-weight: 200;
     text-align: center;
 }
   
