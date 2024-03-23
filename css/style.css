@@ -1,4 +1,3 @@
-
 /*=============== BASE ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 
@@ -223,6 +222,10 @@ ul.social-icons li {
 /*===================================================
  1.4 Bottom navigation bar 
 ==================================================*/
+
+/*===================================================
+ 1.4 Bottom navigation bar 
+==================================================*/
 .navbar.fixed-bottom {
     position: fixed;
     bottom: 0;
@@ -263,10 +266,6 @@ ul.social-icons li {
       display: none;
     }
 }
-
-
-  
-
 
 /*==============================================
     Footer Section

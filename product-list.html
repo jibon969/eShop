@@ -124,11 +124,11 @@
                         </nav>
                     </div>
                 </div>
-                <!-- Bottom navigation bar -->
-                <nav class="navbar fixed-bottom navbar-dark d-block d-sm-block d-md-block d-xl-none d-lg-none pb-0">
+                 <!-- Bottom navigation bar -->
+                 <nav class="navbar fixed-bottom navbar-dark d-block d-sm-block d-md-block d-xl-none d-lg-none pb-0">
                     <ul class="nav justify-content-around ">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link active" href="index.html">
                                 <i class="fas fa-home" style="font-size: 20px;"></i><br> 
                                 Home
                             </a>
@@ -145,8 +145,14 @@
                                 Cart
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-envelope" style="font-size: 20px;"></i><br> 
+                                Contact
+                            </a>
+                        </li>
                     </ul>
-                </nav>        
+                </nav>      
             </div>
         </section>
         <!-- sidebar-section -->
@@ -212,7 +218,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb mt-4">
                                 <li class="breadcrumb-item">
-                                    <a href="{% url 'home' %}">Home</a>
+                                    <a href="index.html">Home</a>
                                 </li>
                                 <li class="breadcrumb-item">
                                     <a href="#">
@@ -314,11 +320,11 @@
                             <div class="filter-content collapse show" id="byPrice">
                                 <div class="card-body">
                                     <div class="form-row">
-                                        <div class="form-group col-md-6">
+                                        <div class="col col-md-6 form-group ">
                                             <label>Min</label>
                                             <input class="form-control" placeholder="0" type="number">
                                         </div>
-                                        <div class="form-group text-right col-md-6">
+                                        <div class="col col-md-6 form-group text-right">
                                             <label>Max</label>
                                             <input class="form-control" placeholder="1,0000" type="number">
                                         </div>
