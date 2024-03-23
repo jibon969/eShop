@@ -6,9 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Jibon Ahmed">
-    <title>eShop Authentic product of Bangladesh</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico">
-    <title>eCommerce</title>
+    <title>Order - eShop Authentic product of Bangladesh</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico">
     <!-- Bootstrap4 files-->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
@@ -98,7 +96,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="product.list.html">
+                                        <a class="nav-link" href="product-list.html">
                                             New arrival
                                         </a>
                                     </li>
@@ -125,23 +123,35 @@
                         </nav>
                     </div>
                 </div>
-                 <!-- Bottom navigation bar -->
-                 <nav class="navbar fixed-bottom navbar-dark d-block d-sm-block d-md-block d-xl-none d-lg-none">
-                    <ul class="nav justify-content-around">
+                <!-- Bottom navigation bar -->
+                <nav class="navbar fixed-bottom navbar-dark d-block d-sm-block d-md-block d-xl-none d-lg-none pb-0">
+                    <ul class="nav justify-content-around ">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="#">
+                                <i class="fas fa-home" style="font-size: 20px;"></i><br> 
+                                Home
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Brand</a>
+                            <a class="nav-link" href="product-list.html">
+                                <i class="fa fa-book fa-fw" style="font-size: 20px;"></i><br>
+                                Products
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cart</a>
+                            <a class="nav-link" href="cart.html">
+                                <i class="fas fa-shopping-cart" style="font-size: 20px;"></i><br> 
+                                Cart
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-envelope" style="font-size: 20px;"></i><br> 
+                                Contact
+                            </a>
                         </li>
                     </ul>
-                </nav>
+                </nav>        
             </div>
         </section>
         <!-- sidebar-section -->
@@ -151,65 +161,43 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-10 pl-0">
-                                <a class="btn btn-primary" href="#">
+                                <a class="btn btn-dark" href="#">
                                     <i class="fa fa-user-circle mr-1"></i>
                                     Log In
                                 </a>
                             </div>
                             <div class="col-2 text-left">
-                                <button type="button" id="sidebarCollapseX" class="btn btn-link">
+                                <button type="button" id="sidebarCollapseX" class="btn btn-link text-dark">
                                     <i class="fas fa-times"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <ul class="list-unstyled components links">
-                    <li class="active">
-                        <a href="#"><i class="fa fa-home mr-3"></i> Home</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-carousel mr-3"></i> Products</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-book-open mr-3"></i> Schools</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-crown mr-3"></i> Publishers</a>
-                    </li>
-                    <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fa fa-help-circle mr-3"></i>
-                            Support
-                        </a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li>
-                                <a href="#">Delivery Information</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="#">Terms & Conditions</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-phone mr-3"></i>
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-                <h6 class="sidebar-categories">Categories</h6>
-                <ul class="list-unstyled components">
-                    <li>
-                        <a href="#">Category 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Category 2</a>
-                    </li>
-                </ul>
+                <div class="sidebar-nav">
+                    <ul class="list-unstyled components links">
+
+                        <li class="active">
+                            <a href="index.html"><i class="fa fa-home mr-3"></i> Home</a>
+                        </li>
+                        <li>
+                            <a href="product-list.html">
+                                <i class="fa fa-carousel mr-3"></i> Product List
+                            </a>
+                        </li>
+                        <li>
+                            <a href="product-detail.html">
+                                <i class="fa fa-book-open mr-3"></i> Product Details
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-crown mr-3"></i> 
+                                Publishers
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <ul class="social-icons">
                     <li><a href="#" target="_blank" title=""><i class="fab fa-facebook-square"></i></a></li>
                     <li><a href="#" target="_blank" title=""><i class="fab fa-twitter"></i></a></li>
