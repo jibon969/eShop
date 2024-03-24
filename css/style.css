@@ -365,6 +365,16 @@ ul.social-icons li {
 	color:#fff;
 	text-decoration:underline;
 }
+
+@media (max-width: 767px) {
+    .inner{
+        margin-bottom: 80px;
+    }
+}
+
+
+
+
 /*=============================
 	End Footer CSS
 ===============================*/
@@ -537,6 +547,42 @@ ul.social-icons li {
     color: white !important;
     background: #000 !important;
     border-radius: 4px !important;
+}
+
+.table-width {
+    word-break: break-all; 
+    white-space: normal; 
+    overflow: hidden; 
+    min-width: 240px;
+    display: block;
+    border-style: none !important;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .table-width {
+        min-width: 240px;
+        display: block;
+        border-style: none !important;
+        text-align: center;
+    }
+}
+
+.cart-price-width{
+    white-space: normal; 
+    overflow: hidden; 
+    min-width: 100px;
+    display: block;
+    border-style: none !important;
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+    .cart-price-width {
+        min-width: 100px;
+        display: block;
+        border-style: none !important;
+        text-align: center;
+    }
 }
 
 /*-----------------------

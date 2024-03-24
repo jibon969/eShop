@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Jibon Ahmed">
     <title>Home - eShop Authentic product of Bangladesh</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <!-- Bootstrap4 files-->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <!-- Font awesome 5 -->
@@ -323,7 +323,7 @@
                 <div class="card-body pb-2">
                     <div class="clearfix">
                         <div class="float-left">
-                            <a href="#">Flash Sales : 6:03 AM 3/22/2024</a>
+                            <a href="#" class="btn btn-outline-dark" id="countdown"></a>
                         </div>
                         <div class="float-right">
                             <a href="#" class="btn btn-outline-dark">Shop More</a>
@@ -557,7 +557,7 @@
                 <div class="card-body pb-2">
                     <div class="clearfix">
                         <div class="float-left">
-                            <a href="#">Happy Deals : 6:03 AM 3/22/2024</a>
+                            <a href="#" class="btn btn-outline-dark">3/27/2024</a>
                         </div>
                         <div class="float-right">
                             <a href="#" class="btn btn-outline-dark">Shop More</a>
@@ -928,6 +928,31 @@
                 header.classList.remove("sticky");
             }
         }
+
+        function updateCountdown() {
+            var saleEndDate = new Date('2024-03-30T00:00:00'); // Change this to your sale end date
+            var now = new Date();
+            var timeDifference = saleEndDate - now;
+
+            if (timeDifference > 0) {
+                var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+                var countdown = days + 'd ' + hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+                document.getElementById('countdown').textContent = countdown;
+            } else {
+                document.getElementById('countdown').textContent = "Sale Ended";
+            }
+        }
+
+        // Call updateCountdown immediately to avoid delay
+        updateCountdown();
+
+        // Update the countdown every second
+        setInterval(updateCountdown, 1000);
+
     </script>
 
 </body>
